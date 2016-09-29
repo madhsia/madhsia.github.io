@@ -285,6 +285,8 @@ nav li a:hover
 {
 	#thumbnails img {
 		width: 100%;
+		/*remove this*/
+		color:#000;
 	}
 
 	#content {
