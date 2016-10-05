@@ -1,21 +1,32 @@
 <!DOCTYPE html> 
 <html>
 
+<script language="javascript">
+
+var num = 50; //number of pixels before modifying styles
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('#nav').addClass('fixed');
+    } else {
+        $('#nav').removeClass('fixed');	
+    }
+});
+
+</script>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="refresh" content="0; url=http://madelinehsia.com/untitled.html" />
+	<!--<meta http-equiv="refresh" content="0; url=http://madelinehsia.com/untitled.html" />-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device=width, initial-scale=1">
+	<!--<meta name="viewport" content="width=device=width, initial-scale=1">-->
 	<title>Madeline Hsia</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,350,500" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400,500" rel="stylesheet">
 </head>
 
 <body>
 	<!--main begin-->
 	<div class="container">
-		
 		<nav id="nav">
 			<li><a href="mad.pdf" target="_blank">RESUME</a></li>
 			<li><a class="active link" id="mad">MADELINE HSIA</a></li>
@@ -24,14 +35,14 @@
 
 		<!--navigation for mobile-->
 		<nav id="mobile">
-			<a href="index.html" id="mad" class="active link">Madeline Hsia</a>
+			<a href="index.html" id="mad" class="active link">MADELINE HSIA</a>
 			<br><br>
 			<a href="mad.pdf" target="_blank">RESUME</a>
 			<a href="about.html" class="link">ABOUT</a>
 		</nav>
 
 		<!--paragraph about me-->
-		<p class="fade" id="hello">Hi! I'm Mad, and I'm an aspiring interaction designer located on Earth. I also love to write (code & beyond). <!--&#10024;--></p>
+		<p class="fade" id="hello">I'm Mad, an aspiring UI designer and web developer located on Earth. I also love to write (code & beyond). <!--<br>🚧 Website  under construction 🚧 --><!--&#10024;--></p>
 	<br><br>
 
 		<!--projects displayed-->
@@ -39,34 +50,28 @@
 			
 			<div class="imgWrap">
 			<a href="coupletones.html">
-				<img src="img/coupletones.jpg"></img>
+				<img src="img/coupletones.png" id="this"></img>
 				<div class="desc">CoupleTones</div>
+				<div class="desc_small">Firebase, Android Studio, Agile dev., UI Design, Google APIs</div>
 			</a>
 			</div>
 
 			<div class="imgWrap">
 			<a href="recycool.html">
-				<img src="img/recycool.jpg"></img>
+				<img src="img/recycool.png" id="this"></img>
 				<div class="desc">Recycool</div>
+				<div class="desc_small">Project managing, UI Design, Adobe Photoshop, Illustrator, Unity</div>
 			</a>			
-			</div>
-
-			<div class="imgWrap">
-			<a href="snapcrit.html">
-				<img src="img/snapchat.jpg"></img>
-				<div class="desc">Snapchat Redesign</div>
-			</a>
 			</div>
 
 			<div class="imgWrap">
 			<a href="matchmaker.html">
 				<img src="img/matchmaker.jpg"></img>
 				<div class="desc">MatchMaker</div>
+				<div class="desc_small">UX Research, User interview, Scoping</div>				
 			</a>
 			</div>
 		</div>
-
-
 	</div> 
 	<!--main end-->
 </body>
