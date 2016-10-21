@@ -8,8 +8,7 @@ img
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom:20px;
-
+    vertical-align: bottom;
 }
 
 html
@@ -17,14 +16,17 @@ html
 	overflow: scroll;
 }
 
-img:hover {
+#thumbnails img:hover {
     opacity: 0.1;
  	transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;
 	-webkit-transition: opacity .5s ease-in-out;
 }
 
-
+#thumbnails img
+{
+	margin-bottom:20px;
+}
 
 h1
 {
@@ -210,7 +212,7 @@ span.desc_small
 
 /**** IDS ****/ 
 
-#content img
+#content img #post #this
 {
 	width:100%;
 }
@@ -273,9 +275,26 @@ span.desc_small
 	letter-spacing: 3px;
 }
 
-
 #this {
 	width:800px;
+}
+
+#post {
+	width:600px;
+}
+
+#that 	{
+	margin: 15px; 
+    width: 45%; 
+    min-width: 250px; 
+    /*box-shadow: 1px 1px 15px gray; */
+}
+
+.picright {
+	float:right;
+}
+.picleft {
+	float:left;
 }
 
 #thumbnails:hover
@@ -299,7 +318,7 @@ span.desc_small
 
 #content 
 {
-	width: 600px;
+	width: 650px;
 	display: block;
 	margin: 10px auto;
 	font-size:14px;
