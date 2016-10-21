@@ -212,10 +212,15 @@ span.desc_small
 
 /**** IDS ****/ 
 
+#content img
+{
+	margin-bottom:20px;
+}
 #content img #post #this
 {
 	width:100%;
 }
+
 
 #aboutme
 {
