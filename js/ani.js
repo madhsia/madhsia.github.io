@@ -1,9 +1,7 @@
-var initialLoad = true;
 
 $(document).ready(function () {
 
 console.log(document.referrer.indexOf(window.location.hostname));
-if ( document.referrer == null || document.referrer.indexOf(window.location.hostname) == 0 ) {
 
   var b = function($b,speed){
       beeWidth = $b.width();
@@ -25,7 +23,5 @@ if ( document.referrer == null || document.referrer.indexOf(window.location.host
     }, 500, function() {
         $('#hello').css("display", "block");
     });
-  initialLoad=false;
-}
 
 });
