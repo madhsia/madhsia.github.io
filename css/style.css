@@ -4,6 +4,10 @@
 	background-color:#fff;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 @font-face {
   font-family: 'FuturaLT';
   src: url('FuturaLT.eot');
