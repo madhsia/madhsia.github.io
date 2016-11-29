@@ -39,22 +39,6 @@
 <div class="container hide fade">
 	<p class="animated fadeInUp delay-05s tagline" id="hello">I'm Mad, an aspiring UI designer and web developer located on Earth. I also love to write (code & beyond).</p>
 
-
-<!--
-	<div class="col-md-6 col-sm-6 box">
-	<div class="imgWrap">
-	<ul class="img-list">
-	  <li>
-	    <a href="http://nataliemac.com">
-	    <img src="img/psd/recycool.png" class="img-responsive" alt="cool ways to recycle">	
-	    <span class="text-content"><span>Place Name</span></span>
-	    </a>
-	  </li>
-	</ul>
-	</div>
-	</div>
--->
-
 	<div class="col-md-6 col-sm-6 box">
 	<div class="imgWrap">
 	  <a href="recycool.html">
@@ -98,34 +82,6 @@
 </div> <!--Container-->
 <!-- End Thumbnails-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript" src="/js/ani.js"></script>
-<script>
-$(document).ready(function () {
-console.log(document.referrer.indexOf(window.location.hostname));
-if ( document.referrer == null || document.referrer.indexOf(window.location.hostname) == 0 ) {
-
-  var b = function($b,speed){
-      beeWidth = $b.width();
-      
-      $b.delay(1000).animate({
-          top:"4%"
-      }, speed, function() {
-        $('.hide').css("display", "block");
-    });
-  };
-
-  $(function(){
-      b($("#b"), 1000);
-  });
-
-    $('#container-single article').delay(2000).animate({
-        left: '-490',
-        easing: 'easeOutQuad'
-    }, 500, function() {
-        $('#hello').css("display", "block");
-    });
-}
-});
-</script>
+<script type="text/javascript" src="js/ani.js"></script>
 </body>
 </html>
