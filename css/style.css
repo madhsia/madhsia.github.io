@@ -93,7 +93,7 @@ ul.img-list li:hover span.text-content {
 }
 
 .imgWrap img:hover {
-	opacity:0.2;
+	opacity:0.05;
 	filter:alpha(opacity=100);
 	-o-transition:.3s;
 	-ms-transition:.3s;
@@ -574,7 +574,12 @@ hr {
 	}
 
 	#mobile {
-		display: block;
+		display: none;
+	}
+
+
+	#content {
+		width:100%;
 	}
 
 	#content img{
