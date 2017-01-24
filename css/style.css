@@ -23,6 +23,12 @@ body {
 	letter-spacing: 0.3px;
 }
 
+figure {
+  display: block;
+  overflow:hidden;
+  width:300px;
+}
+
 .container {
 	width: 940px;
 	margin: 70px auto 50px auto;
@@ -51,7 +57,7 @@ body {
 	position: relative;
 }
 
-.imgWrap img:hover {
+/*.imgWrap img:hover {
 	opacity:0.05;
 	filter:alpha(opacity=100);
 	-o-transition:.3s;
@@ -59,23 +65,51 @@ body {
 	-moz-transition:.3s;
 	-webkit-transition:.3s;
 	transition:.3s;   
-}
+}*/
 
 /* Portfolio section */
 
+.imgCaption {
+  position: absolute; z-index: 9; top:50%; left: 50%; width: 100%; padding: 10px 40px;
+  width:100%;
+  height:100%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  opacity:0;
+	-o-transition:0.3s;
+	-ms-transition:0.3s;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3;
+	transition:0.3s;
+
+}
+
+.imgWrap:hover .imgCaption{
+	background-color: #fff;
+	display:block;
+	opacity:0.95;
+	-o-transition:0.3s;
+	-ms-transition:0.3s;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3;
+	transition:0.3s;
+}
+
 .imgWrap:hover .desc {
 	opacity:1;
-	filter:alpha(opacity=100); /* For IE8 and earlier */
+	filter:alpha(opacity=100);
 	-o-transition:1s;
 	-ms-transition:1s;
 	-moz-transition:1s;
 	-webkit-transition:1s;
-	transition:1s;   
+	transition:1s;
 }
 
 .imgWrap:hover .desc_small {
 	opacity:1;
-	filter:alpha(opacity=100); /* For IE8 and earlier */
+	filter:alpha(opacity=100); 
 	-o-transition:1s;
 	-ms-transition:1s;
 	-moz-transition:1s;
@@ -93,16 +127,16 @@ span.desc {
 	line-height: 0;
 	color: #000; 
 	text-align: center;
-	width: 100%;
 	position:absolute;
+	width:83%;
 	top:45%;
-	opacity:0;	
-	filter:alpha(opacity=0); /* For IE8 and earlier */
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;
+	opacity:0;
+	-o-transition:1s;
+	-ms-transition:1s;
+	-moz-transition:1s;
+	-webkit-transition:1s;
+	transition:1s;
+
 }
 
 span.desc span {
@@ -121,16 +155,16 @@ span.desc_small
 	line-height: 0;
 	color: #000;  
 	text-align: center;
-	width: 100%;
 	position:absolute;
+	width:83%;
 	top:55%;
 	opacity:0;
-	filter:alpha(opacity=0); /* For IE8 and earlier */
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;   
+	-o-transition:1s;
+	-ms-transition:1s;
+	-moz-transition:1s;
+	-webkit-transition:1s;
+	transition:1s;
+
 }
 
 
@@ -199,7 +233,7 @@ img {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    vertical-align: bottom;
+    
 }
 
 a {
