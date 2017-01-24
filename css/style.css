@@ -4,10 +4,6 @@
 	background-color:#fff;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
-}
-
 @font-face {
   font-family: 'FuturaLT';
   src: url('FuturaLT.eot');
@@ -50,43 +46,6 @@ body {
 .box {
 	padding: 20px 20px 20px 20px;
 }
-
-/*ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-ul.img-list li {
-  display: inline-block;
-  height: 150px;
-  margin: 0 1em 1em 0;
-  position: relative;
-}
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-span.text-content {
-	background: #000;
-	color: black;
-	cursor: pointer;
-	display: table;
-	height:500px;
-	width: 500px 
-	left: 0;
-	position: absolute;
-	top: 0;
-	opacity: 0;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	transition: opacity 500ms;
-}
-ul.img-list li:hover span.text-content {
-  opacity: 1;
-}*/
 
 .imgWrap {
 	position: relative;
@@ -238,8 +197,8 @@ nav li a:hover
 
 img {
 	display: block;
-    /*margin-left: auto;
-    margin-right: auto;*/
+    margin-left: auto;
+    margin-right: auto;
     vertical-align: bottom;
 }
 
@@ -334,7 +293,6 @@ strong {
 }
 
 #content .copy {
-	width: 700px;
 	display: block;
 	margin: 10px auto;
 }
@@ -397,7 +355,27 @@ hr {
 	margin-bottom: 30px;
 }
 
-/* imgs */
+
+#about {
+	font-size: 15px;
+	font-weight:300;
+	color: #222222;
+	letter-spacing: 0.44px;
+}
+
+#objective {
+	font-size:14px;
+	font-color:#e4e4e4;
+  	border: 1px solid black ;
+  	padding:10px 10px 10px 10px;
+}
+
+#mobile {
+	display: none;
+	text-align:center;
+}
+
+/* imgs 
 
 #content div.img-row {
 	width: 940px;
@@ -436,25 +414,6 @@ hr {
 #heart {
 	font-size:12px;
 	color:red;
-}
-
-#about {
-	font-size: 15px;
-	font-weight:300;
-	color: #222222;
-	letter-spacing: 0.44px;
-}
-
-#objective {
-	font-size:14px;
-	font-color:#e4e4e4;
-  	border: 1px solid black ;
-  	padding:10px 10px 10px 10px;
-}
-
-#mobile {
-	display: none;
-	text-align:center;
 }
 
 /* ANIMATIONS */
@@ -536,8 +495,13 @@ hr {
 		width: 66%;
 		font-size: 24px;
 	}
+
 	#content div.img-row {
 		width: 100%;
+	}
+
+	#container img {
+		width:100%;
 	}
 
 	#content img.left, #content img.img-2.right, #content img.img-3.right {
@@ -559,6 +523,10 @@ hr {
 		width: 100%;
 	}
 
+	#container img {
+		width:100%;
+	}
+
 	#content {
 		width:100%;
 		margin:0;
@@ -577,12 +545,11 @@ hr {
 		display: none;
 	}
 
-
-	#content {
+	img {
 		width:100%;
 	}
 
-	#content img{
+	#container img{
 		width:100%;
 	}
 
@@ -596,3 +563,5 @@ hr {
 	}
 
 }
+
+
