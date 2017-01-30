@@ -540,7 +540,7 @@ hr {
 		display:none;
 	}
 
-	#nav, #hello, .desc_small {
+	#nav, #hello, {
 		display: none;
 	}
 
