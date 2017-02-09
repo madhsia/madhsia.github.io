@@ -19,8 +19,7 @@
 body {
 	font-family: 'Yantramanav', sans-serif;
 	background-color:#fff;
-	line-height: 20px;
-	letter-spacing: 0.3px;
+	line-height: 25px;
 }
 
 figure {
@@ -33,6 +32,7 @@ figure {
 	width: 940px;
 	margin: 70px auto 50px auto;
 }
+
 
 .about-container {
 	width: 75%;
@@ -305,6 +305,7 @@ strong {
 }
 
 /* content */
+
 
 #content img {
 	width: 100%;
