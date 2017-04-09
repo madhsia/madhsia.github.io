@@ -28,6 +28,19 @@ figure {
   width:300px;
 }
 
+div.fadeMe {
+	opacity:0.7;
+	filter: alpha(opacity=20);
+	background-color:#fff; 
+	width:100%; 
+	height:100%; 
+	z-index:10;
+	top:0; 
+	left:0; 
+	position:fixed; 
+}
+
+
 .container {
 	width: 940px;
 	margin: 70px auto 50px auto;
@@ -218,7 +231,7 @@ nav li a:hover
 	letter-spacing: 3px;
 }
 
-#hello {
+#temphello {
 	font-family: 'Yantramanav', sans-serif;
 	font-size: 24px;
 	text-align:center;
@@ -226,6 +239,18 @@ nav li a:hover
 	width: 650px;
 	font-weight:300;
 	line-height: 35px;
+	color:#4d4d4d;
+}
+
+
+#hello {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 16px;
+	text-align:left;
+	margin: 50px auto 20px auto;
+	width: 650px;
+	font-weight:300;
+	line-height: 150%;
 	color:#4d4d4d;
 }
 
@@ -478,7 +503,7 @@ hr {
 
 	.container {
 		width: 80%;
-		margin: 40px 10%;
+		/*margin: 40px 10%;*/
 	}
 
 	#nav {
@@ -487,7 +512,7 @@ hr {
 
 	#hello {
 		width: 66%;
-		font-size: 24px;
+		font-size: 16px;
 	}
 
 	#content div.img-row {
